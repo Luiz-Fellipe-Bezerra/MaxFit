@@ -1,0 +1,113 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+}
+
+.header {
+    background-color: aquamarine;
+}
+
+.side-menu {
+    display: inline-block;
+    font-size: 30px;
+    width: 50px;
+    height: 40px;
+    position: absolute;
+    margin: 5px 0 0 10px;
+    border: 2px solid white;
+    border-radius: 20px;
+    cursor: pointer;
+    background-color: aquamarine;
+    transition: all 0.4s ease-in-out;
+    color: white;
+}
+
+.side-menu img {
+    width: 20px;
+}
+
+.side-menu:hover {
+    background-color: aliceblue;
+}
+
+.div-header {
+    display: inline-block;
+    width: 30%;
+    margin: 5px 0 0 539px;
+    text-align: center;
+}
+
+.div-header input {
+    width: 250px;
+    height: 40px;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    text-align: center;
+    background-color: aquamarine;
+    transition: all 0.4s ease-in-out;
+}
+
+.div-header input:hover {
+    background-color: aliceblue;
+}
+
+.div-header h1 {
+    font-size: 50px
+}
+
+.buttons-header {
+    display: inline-block;
+    margin: 5px 0 0 10%;
+    position: absolute;
+}
+
+.buttons-header button {
+    width: 80px;
+    height: 30px;
+    background-color: aquamarine;
+    border: 2px solid white;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+    color: white;
+}
+
+.buttons-header button:hover {
+    background-color: aliceblue;
+}
+
+.line {
+    height: 0.5px;
+}
+
+.section-buttons {
+    display: flex;
+    gap: 20px;
+    padding: 5px;
+    background-color: aquamarine;
+}
+
+.section-buttons button {
+    width: 80px;
+    font-size: 20px;
+}
+
+section {
+    display: flex;
+    justify-content: center;
+}
+
+.main {
+   display: flex;
+   justify-content: center;
+   flex-direction: column;
+   gap: 10px;
+   
+}
