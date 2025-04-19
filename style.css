@@ -11,7 +11,7 @@ body {
 
 .header {
     width: 100vw;
-    background-color: aquamarine;
+    background-color:#474747;
     display: flex;
     justify-content: space-between;
 }
@@ -24,12 +24,12 @@ body {
     font-size: 30px;
     width: 50px;
     height: 40px;
-    border: 2px solid white;
+    border: 2px solid #ffffff;
     border-radius: 20px;
     cursor: pointer;
-    background-color: aquamarine;
+    background-color #ffffff;
     transition: all 0.4s ease-in-out;
-    color: white;
+    color: #ffffff;
 }
 
 .side-button img {
@@ -37,22 +37,23 @@ body {
 }
 
 .side-button:hover {
-    background-color: aliceblue;
+    opacity: 50%;
 }
 
 .div-header {
     width: 30%;
     text-align: center;
+    padding-top: 10px;
 }
 
 .div-header input {
     width: 250px;
     height: 40px;
-    border: none;
+    border: 1px solid gray;
     border-radius: 30px;
-    cursor: pointer;
+    cursor: text;
     text-align: center;
-    background-color: aquamarine;
+    background-color: #ffffff;
     transition: all 0.4s ease-in-out;
 }
 
@@ -61,9 +62,13 @@ body {
 }
 
 .div-header h1 {
-    font-size: 50px
+    font-size: 50px;
+    color: #ffffff;
 }
 
+.div-header h1 strong {
+    color: red;
+}
 .buttons-header {
     padding: 10px;
 }
@@ -71,16 +76,17 @@ body {
 .buttons-header button {
     width: 80px;
     height: 30px;
-    background-color: aquamarine;
+    background-color: #ffffff;
     border: 2px solid white;
     border-radius: 20px;
     cursor: pointer;
     transition: all 0.2s ease-in-out;
-    color: white;
+    color: #000000;
 }
 
 .buttons-header button:hover {
-    background-color: aliceblue;
+    
+    opacity: 50%;
 }
 
 .line {
@@ -92,12 +98,21 @@ body {
     display: flex;
     gap: 20px;
     padding: 5px;
-    background-color: aquamarine;
+    background-color: #7d7c7c;
 }
 
 .section-buttons button {
-    width: 80px;
+    width: 150px;
     font-size: 20px;
+    background-color: transparent;
+    border: none;
+    border-radius: 20px;
+    transition: all 0.2s ease-in-out;
+    cursor: pointer;
+}
+
+.section-buttons button:hover {
+    color: #ffffff;
 }
 
 section {
@@ -110,7 +125,11 @@ section {
     justify-content: center;
     align-items: center;
     height: 350px;
-    background-color: burlywood;
+}
+
+.slide-of-images img {
+    width: 100%;
+    height: 100%;
 }
 .main {
    display: flex;
@@ -119,6 +138,7 @@ section {
    gap: 10px;
    width: 100vw;
    height: 81%;
+   background-color: #ffffff;
 }
 
 .main section {
@@ -129,8 +149,27 @@ main .first-section {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 30px;
-    background-color: rgb(132, 41, 216);
+}
+
+.images-of-creatines section {
+
+    border: 1px solid #7d7c7c;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+}
+.images-of-creatines section .btn-img-h2 {
+    display: flex;
+    flex-direction: column;
+}
+.images-of-creatines section img {
+    height: 100px;
+    width: 50%;
+}
+
+.first-section h2 {
+    font-size: 30px;
+    color: #ffffff;
 }
 
 .images-of-creatines, .images-of-outfits, .images-of-varied {
@@ -138,16 +177,13 @@ main .first-section {
     gap: 100px;
 }
 
-main .first-section .first-image-creatines {
-    background-color: white;
-}
-
 main .second-section {
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 30px;
-    background-color: rgb(0, 187, 106);
+    background-color: #ffffff;
+    z-index: -1; /* Provisório */
 }
 
 main .third-section {
