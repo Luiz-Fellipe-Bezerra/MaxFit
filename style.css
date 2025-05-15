@@ -5,8 +5,9 @@
 }
 
 body {
-    width: 100vh;
-    height: 100vw;
+    width: 100%;
+    height: 100%;
+    background-color: #DCDCDC;
 }
 
 .header {
@@ -82,6 +83,7 @@ body {
     cursor: pointer;
     transition: all 0.2s ease-in-out;
     color: #000000;
+    
 }
 
 .buttons-header button:hover {
@@ -115,7 +117,7 @@ body {
     color: #ffffff;
 }
 
-section {
+.section-buttons {
     display: flex;
     justify-content: center;
 }
@@ -132,74 +134,124 @@ section {
     height: 100%;
 }
 .main {
-   display: flex;
-   justify-content: center;
-   flex-direction: column;
-   gap: 10px;
-   width: 100vw;
-   height: 81%;
-   background-color: #ffffff;
-}
-
-.main section {
-    height: 80%;
-}
-
-main .first-section {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.images-of-creatines section {
-
-    border: 1px solid #7d7c7c;
-    height: 400px;
-    display: flex;
-    flex-direction: column;
-}
-.images-of-creatines section .btn-img-h2 {
-    display: flex;
-    flex-direction: column;
-}
-.images-of-creatines section img {
-    height: 100px;
-    width: 50%;
-}
-
-.first-section h2 {
-    font-size: 30px;
-    color: #ffffff;
+   
 }
 
 .images-of-creatines, .images-of-outfits, .images-of-varied {
-    display: flex;
-    gap: 100px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-items: center;
+    padding: 10px;
 }
 
-main .second-section {
+.first-section .title {
+    text-align: center;
+    margin: 20px 0;
+    font-size: 40px;
+}
+
+.btn-img-h2 h2{
+    color: #000000;
+}
+
+.btn-img-h2 li {
+    color: #7d7c7c;
+}
+
+.btn-img-h2 {
+    display: flex;
+    flex-direction: column;
+    width: 220px;
+    gap: 10px;
+}
+
+.images-of-creatines a {
+    text-decoration: none;
+}
+
+.first-image-creatines, .second-image-creatines, .third-image-creatines, .first-image-outfits, .second-image-outfits, .third-image-outfits, .first-image-varied, .second-image-varied, .third-image-varied {
+    box-shadow: 0 3px 6px rgba(0, 0, 0, .15);
+    padding: 30px;
+    border-radius: 10px ;
+    background-color: #ffffff;
+}
+
+.second-section .title {
+    text-align: center;
+    margin: 20px 0;
+    font-size: 40px;
+}
+
+.second-image-outfits img {
+    height: 286px;
+    object-fit: cover;
+}
+
+.third-section .title {
+    text-align: center;
+    margin: 20px 0;
+    font-size: 40px;
+}
+
+.btn-img-h2 .desc-prod {
+    height: 136px;
+}
+
+/* main .second-section {
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 30px;
     background-color: #ffffff;
-    z-index: -1; /* Provisório */
-}
+    z-index: -1; 
+} */
 
-main .third-section {
+/* main .third-section {
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 30px;
     background-color: rgb(112, 124, 21);
-}
+} */
 
 footer {
-    width: 100vw;
-    height: 250px;
+    background-color: #7d7c7c;
+    border-radius: 10px 10px 0 0;
+}
+
+footer h2 {
+    text-align: center;
+    padding-top: 10px;
+    font-size: 30px;
+}
+
+.info-footer {
     display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: darkgreen;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+.links-footer {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.info-footer h4 {
+    font-size: 20px;
+}
+
+.links-footer a {
+    text-decoration: none;
+    color: #000000;
+}
+
+.links-footer a:hover {
+    text-decoration: underline;
+}
+
+
+.info-footer .copyright {
+    width: 300px;
 }
 
